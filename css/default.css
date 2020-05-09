@@ -145,18 +145,20 @@ a.header__active-link {
     position: relative;
     overflow: hidden;
     padding: 0 2em;
+    min-width: 15rem;
+    min-height: 2rem;
     text-align: center;
     white-space: nowrap;
 }
 .footer__make-call::after {
-    content: '→';
+    content: '∠';
     display: block;
     position: absolute;
     font-size: 2rem;
-    height: 1rem;
     overflow: hidden;
-    top: 0;
-    right: -2.5rem;
+    transform: rotate(-135deg);
+    top: .25rem;
+    right: -1.5rem;
     opacity: 0;
     transition: .2s ease;
 }
@@ -164,7 +166,7 @@ a.header__active-link {
     text-align-last: left;
 }
 .footer__make-call:hover::after {
-    right: 2.5rem;
+    right: 1.5rem;
     opacity: 1;
 }
 .footer__company-info {
