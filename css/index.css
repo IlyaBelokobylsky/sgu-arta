@@ -56,6 +56,7 @@
 .company-first-section__buttons {
     display: flex;
     justify-content: center;
+    text-align: center;
     position: relative;
     margin-left: -19.5vw;
     margin-right: 19.5vw;

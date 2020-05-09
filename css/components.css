@@ -249,7 +249,7 @@ ul {
     border-radius: 100%;
 }
 .btn-call svg  {
-    padding: 0;
+    padding: 1.5rem;
     height: 2rem;
 }
 .btn-call:hover {
