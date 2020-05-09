@@ -522,7 +522,8 @@ p.about-company__job {
     padding: 1rem;
     padding-top: 0;
     min-width: 17.5rem;
-    height: 50.5rem;
+    min-height: 60rem;
+    max-height: 92.5%;
     background-color: #fff;
 }
 .main-grid .other .small-title {
