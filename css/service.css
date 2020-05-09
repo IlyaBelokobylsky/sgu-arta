@@ -153,12 +153,14 @@
 .step__item svg {
     margin-bottom: 1rem;
     fill: var(--dark-invisible-color);
+    stroke: var(--dark-invisible-color);
 }
 .step__item img {
     margin-bottom: 1rem;
 }
 .step__item.choosed svg {
     fill: var(--highlight-color);
+    stroke: var(--highlight-color);
 }
 li.step__item.choosed {
     color: var(--highlight-color);
