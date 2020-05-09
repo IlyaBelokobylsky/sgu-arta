@@ -1,0 +1,205 @@
+.company-first-section {
+    padding-top: 16vw;
+    position: relative;
+    width: 100vw;
+    color: #fff;
+}
+
+.company-first-section::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(50%);
+    background-image: url(../img/background-big.png);
+}
+.company-first-section__numbers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-right: 19.5vw;
+    font-size: 1.75rem;
+    justify-content: space-between;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+.company-first-section__numbers svg {
+    display: block;
+    margin-bottom: 3.5rem;
+}
+.company-first-section__numbers li:not(.current-number) {
+    color: #e0e0e0;
+    font-weight: 400;
+}
+.company-first-section__numbers .current-number {
+    position: relative;
+    padding-bottom: 4.3rem;
+}
+.company-first-section__numbers .current-number::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 4vw;
+    height: 2px;
+    background-color: #fff;
+}
+.company-first-section__about {
+    width: 30rem;
+}
+.company-first-section__buttons {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-left: -19.5vw;
+    margin-right: 19.5vw;
+    margin-top: 11.25vw;
+}
+
+.services__list {
+    margin-top: 4.2vw;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+}
+.services__item {
+    background-color: #fff;
+    padding: 1.2rem;
+    min-width: 19.3vw;
+    position: relative;
+    z-index: 1;
+    transition: .3s ease;
+}
+.services__item .small-title {
+    min-height: 3rem;
+}
+.services__item .number {
+    display: block;
+    position: absolute;
+    top: -2.3rem;
+    font-size: 4.6rem;
+    text-shadow: var(--highlight-color) 1px 1px 0, var(--highlight-color) -1px -1px 0, 
+                var(--highlight-color) -1px 1px 0, var(--highlight-color) 1px -1px 0;
+    color: #fff;
+    font-weight: 600;
+    opacity: 1;
+    transition: .3s ease;
+}
+.services__item .more-link {
+    display: block;
+    position: absolute;
+    right: -5rem;
+    bottom: 0;
+    color: #fff;
+    transition: .3s ease;
+}
+.services__item:hover {
+    background-color: transparent;
+    color: #fff;
+    padding-top: 0;
+}
+.services__item:hover .number {
+    opacity: 0;
+}
+.services__item::before,
+.services__item::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: .3s ease;
+}
+.services__item::before {
+    background-image: url(../img/background-extra-small.png);
+    z-index: -10;
+}
+.services__item::after {
+    background-color: var(--highlight-color);
+    z-index: -5;
+}
+.services__item:hover::before {
+    opacity: 1;
+}
+.services__item:hover::after {
+    opacity: .8;
+}
+.services__item:hover .more-link {
+    right: 1rem;
+}
+.rates {
+    margin-bottom: 8rem;
+}
+.rates__list {
+    margin-top: 3.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1.5rem;
+    position: absolute;
+    z-index: 10;
+    width: 130rem;
+    max-width: 155vw;
+    justify-content: center;
+    margin-left: -27.5rem;
+}
+
+.company-info {
+    padding-top: 20.5rem;
+}
+@media (max-width: 800px) {
+    .rates {
+        margin-bottom: 0;
+    }
+    .rates__list {
+        position: static;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        max-width: 90vw;
+        margin-left: 0;
+    }
+    .company-first-section ul.company-first-section__numbers {
+        padding: 0;
+        grid-gap: 1.75rem;
+        margin-left: -1rem;
+    }
+    .company-first-section__buttons {
+        justify-content: center;
+    }
+    .services__list {
+        margin-top: 3rem;
+        grid-template-columns: 1fr;
+        grid-row-gap: 4rem;
+    }
+    .company-info {
+        padding-top: 12.2vw;
+    }
+    .done-projects  .watch-all {
+        right: -2rem;
+    }
+}
+@media (max-width: 500px) {
+    .company-first-section__numbers {
+        grid-template-columns: 1fr;
+    }
+    .company-first-section__numbers .current-number::after {
+        width: 10vw;
+    }
+    .company-first-section__about {
+        width: 75vw;
+    }
+    .company-first-section .company-first-section__buttons {
+        flex-direction: column;
+        margin-left: 0;
+    }
+}
