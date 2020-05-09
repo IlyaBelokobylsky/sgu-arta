@@ -102,19 +102,19 @@ button {
     width: 15rem;
 }
 .btn-medium::after {
-    content: '→';
+    content: '∠';
     display: block;
     position: absolute;
     font-size: 2rem;
-    height: 1.25rem;
     overflow: hidden;
-    top: .35rem;
-    right: -2.5rem;
+    transform: rotate(-135deg);
+    top: .85rem;
+    right: -2rem;
     opacity: 0;
     transition: .2s ease;
 }
 .btn-medium:hover::after {
-    right: 2.5rem;
+    right: 2rem;
     opacity: 1;
 }
 .btn-medium:hover {
