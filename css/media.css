@@ -105,7 +105,7 @@
     }
     .hamburger span {
         display: block;
-        width: 3rem;
+        width: 100%;
         height: 4.5px;
         background-color: var(--font-color);
     }
@@ -289,10 +289,13 @@
         padding: 0;
     }
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
     .container {
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+    .medium-title {
+        font-size: 2.25rem;
     }
     .page-navigation .link {
         white-space: normal;
@@ -305,8 +308,8 @@
     }
     .header {
         flex-wrap: wrap;
-        /* justify-content: center; */
-        height: 20vh;   
+        min-height: 20vh;
+        height: auto;   
     }
     .header .hamburger {
         position: absolute;
@@ -319,6 +322,10 @@
     }
     .header .header__call-form {
         margin-left: 0;
+        font-size: 1.25rem;
+    }
+    .header .header__call-form svg {
+        width: 1.25rem;
     }
     .about-company__list {
         grid-template-columns: 1fr;
@@ -333,7 +340,7 @@
         right: 3rem;
     }
     .watch-all {
-        top: 10rem;
+        top: 9.25rem;
         right: 0;
     }
     .done-projects__list {
@@ -346,15 +353,28 @@
         width: 75vw;
         max-height: 37.5rem;
     }
+    .with-styled-list {
+        padding: 5vw;
+    }
     .done-projects__item .content {
         width: 85vw;
     }
     .done-projects__item .img {
         width: 88.5vw;
     }
+    .done-projects__item img {
+        width: 89vw;
+        height: 89vw;
+    }
+    .user-project .img {
+        height: 88.5vw;
+    }
     .call-form-small {
         max-height: 25rem;
         padding-left: 1rem;
+    }
+    .call-form-small input[type="text"] {
+        width: 90%;
     }
     .call-form-small .flex {
         display: block;
@@ -437,9 +457,48 @@
     }
     .call-form {
         overflow: visible;
+        height: auto;
     }
     .call-form__form {
         padding-top: 0;
         margin-bottom: 2rem;
+    }
+    .rate-form-big,
+    .rate-form-small {
+        padding: 3rem .75rem 1.5rem;
+    }
+}
+@media (max-width: 400px) {
+    html {
+        font-size: 14px;
+    }
+    .hamburger {
+        width: 15vw;
+        height: 15vw;
+    }
+    .hamburger span {
+        max-width: 15vw;
+    }
+}
+@media (max-width: 300px) {
+    html {
+        font-size: 12px;
+    }
+    .standart-section {
+        padding-bottom: 2rem;
+    }
+    .footer__navigation {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .footer__make-call {
+        min-width: 90vw;
+        max-width: 95vw;
+        height: 3rem;
+    }
+    .footer__call-form input[type="text"] {
+        display: block;
+        max-width: 95vw;
+        min-width: 75vw;
     }
 }

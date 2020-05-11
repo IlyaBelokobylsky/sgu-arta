@@ -265,6 +265,10 @@ li.step__item.choosed {
     .step__title {
         display: block;
     }
+    .step__description {
+        margin-top: 2rem;
+        padding-left: 1vw;
+    }
     .step__variants {
         grid-template-columns: 1fr;
     }

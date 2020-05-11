@@ -201,6 +201,14 @@
     }
     .company-first-section .company-first-section__buttons {
         flex-direction: column;
+        position: relative;
         margin-left: 0;
+        margin-right: 0;
+    }
+    .company-first-section ul.company-first-section__numbers {
+        margin-left: -.5vw;
+    }
+    .company-first-section__buttons a {
+        max-width: 95vw ;
     }
 }
