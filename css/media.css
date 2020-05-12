@@ -457,6 +457,17 @@
         width: 100%;
         height: auto;
     }
+    .contacts {
+        background: none;
+        padding: 0;
+    }
+    .contacts .img.mobile {
+        width: 100vw;
+    }
+    .contacts .img.mobile img {
+        width: 100%;
+    }
+
     .contacts__grid {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 4fr;

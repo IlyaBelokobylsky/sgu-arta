@@ -224,6 +224,9 @@ ul {
 .rate-form-small {
     min-width: 28.5vw;
 }
+.resizable-image {
+    cursor: zoom-in;
+}
 
 
 
