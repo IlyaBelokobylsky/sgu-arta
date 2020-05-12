@@ -693,7 +693,7 @@ p.about-company__job {
 .call-form {
     display: grid;
     grid-template-columns: repeat(2, 50vw);
-    height: 89vh;
+    height: 91vh;
     margin: 0;
     padding: 0;
     overflow: hidden;

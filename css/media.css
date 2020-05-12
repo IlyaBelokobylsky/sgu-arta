@@ -49,10 +49,6 @@
     .call-form__section {
         padding-left: 5vw;
     }
-    .section-call-form,
-    .like-this {
-        padding-bottom: 7.5rem;
-    }
     .btn-call {
         top: -7rem;
     }
@@ -81,6 +77,9 @@
     }
     .call-form {
         grid-template-columns: 66.6vw 33.3vw;
+    }
+    .content-watch-all {
+        width: 88.5vw;
     }
 }
 /* Планшеты и большие телефоны */
@@ -156,7 +155,7 @@
     .header__navigation {
         flex-direction: column;
         position: absolute;
-        text-align-last: left;
+        text-align: left;
         justify-content: space-around;
         background-color: #fff;
         overflow: hidden;
@@ -298,11 +297,25 @@
         margin: 0;
         padding: 0;
     }
+    .contacts {
+        background: none;
+        padding: 0;
+    }
+    .contacts .img.mobile {
+        width: 100vw;
+    }
+    .contacts .img.mobile img {
+        width: 100%;
+    }
+
 }
 @media (max-width: 550px) {
     .container {
         padding-left: 3vw;
         padding-right: 3vw;
+    }
+    .page-title {
+        text-align: center;
     }
     .page-navigation, .page-navigation-small {
         text-align: center;
@@ -360,27 +373,26 @@
         width: 75vw;
     }
     .done-projects__list {
-        margin-left: -1rem;
-        margin-right: 1rem; 
+        margin-left: 0;
     }
+    
     .done-projects__list .done-projects__item {
         flex-direction: column-reverse;
-        margin-left: 1rem;
-        width: 75vw;
+        width: 88.5vw;
         max-height: 37.5rem;
     }
     .with-styled-list {
         padding: 5vw;
     }
     .done-projects__item .content {
-        width: 85vw;
+        width: 88.5vw;
     }
     .done-projects__item .img {
         width: 88.5vw;
     }
     .done-projects__item img {
-        width: 89vw;
-        height: 89vw;
+        width: 88.5vw;
+        height: 88.5vw;
     }
     .user-project .img {
         height: 88.5vw;
@@ -457,17 +469,6 @@
         width: 100%;
         height: auto;
     }
-    .contacts {
-        background: none;
-        padding: 0;
-    }
-    .contacts .img.mobile {
-        width: 100vw;
-    }
-    .contacts .img.mobile img {
-        width: 100%;
-    }
-
     .contacts__grid {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 4fr;

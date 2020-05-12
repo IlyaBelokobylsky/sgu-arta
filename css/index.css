@@ -185,9 +185,6 @@
     .company-info {
         padding-top: 12.2vw;
     }
-    .done-projects  .watch-all {
-        right: -2rem;
-    }
 }
 @media (max-width: 500px) {
     .company-first-section__numbers {
