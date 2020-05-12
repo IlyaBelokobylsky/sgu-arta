@@ -98,9 +98,6 @@
         width: 10rem;
         height: 4rem;
     }
-    .page-title {
-        text-align: center;
-    }
     .hamburger {
         width: 10vw;
         max-width: 2.75rem;
@@ -270,9 +267,6 @@
         grid-template-columns: 1fr;
         margin-top: 2rem;
     }
-    .page-navigation {
-        text-align: center;
-    }
     .page-navigation-small {
         margin-top: 1rem;
         margin-bottom: 1rem;
@@ -309,6 +303,9 @@
     .container {
         padding-left: 3vw;
         padding-right: 3vw;
+    }
+    .page-navigation, .page-navigation-small {
+        text-align: center;
     }
     .medium-title {
         font-size: 2.25rem;
