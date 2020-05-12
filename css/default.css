@@ -57,7 +57,7 @@ a.header__active-link {
     text-transform: uppercase;
 }
 .header__call-form a .phone {
-    margin-right: 10px;
+    margin-right: .8rem;
 }
 .header__call-form:hover {
     color: var(--highlight-color);
@@ -68,6 +68,7 @@ a.header__active-link {
     padding-left: 3.5%;
 }
 .footer {
+    position: relative;
     background: var(--font-color);
     color: #fff;
     padding-top: 3.65vw;

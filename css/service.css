@@ -211,7 +211,10 @@ li.step__item.choosed {
     }
     .step__variants {
         margin-left: -1.5rem;
-    }   
+    } 
+    .calculate-sum {
+        padding-bottom: 5rem;
+    }  
 }
 
 @media (max-width: 800px) {

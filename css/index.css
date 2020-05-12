@@ -199,16 +199,24 @@
     .company-first-section__about {
         width: 75vw;
     }
+    .container.company-first-section {
+        padding-left: 0;
+    }
+    .company-first-section ul.company-first-section__numbers{
+        margin-left: 4.5vw;
+    }
+    .company-first-section div.company-first-section__about {
+        margin-left: 5vw;
+    }
     .company-first-section .company-first-section__buttons {
         flex-direction: column;
         position: relative;
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .company-first-section ul.company-first-section__numbers {
-        margin-left: -.5vw;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        max-width: 80vw;
     }
     .company-first-section__buttons a {
-        max-width: 95vw ;
+        width: 100%;
     }
 }

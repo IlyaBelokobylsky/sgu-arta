@@ -186,13 +186,19 @@ ul {
     width: 100%;
     height: 100%;
 }
+.content-watch-all {
+    position: relative;
+}
+.main-wrapper {
+    position: relative;
+}
 .watch-all {
     display: block;
     position: absolute;
-    right: 20vw;
+    right: 0;
     color: var(--dark-invisible-color);
     padding: 1rem;
-    top: 15vw;
+    top: -5rem;
 }
 .watch-all:hover {
     color: var(--highlight-color);
@@ -242,7 +248,8 @@ ul {
     display: block;
     position: absolute;
     right: 2.5vw;
-    bottom: 2.5vw;
+    top: -10rem;
+    z-index: 100;
     padding-top: 0.1rem;
     width: 5rem;
     height: 5rem;
